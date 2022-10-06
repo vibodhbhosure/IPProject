@@ -1,4 +1,5 @@
 const express = require("express");
+const { generateFile } = require("./generateFile");
 const bodyParser = require("body-parser");
 const app = express();
 
@@ -9,10 +10,13 @@ app.get("/", (req, res) => {
   return res.json({ message: "Hello World!" });
 });
 
-app.post("/run", (req, res) => {
+app.post("/run", async (req, res) => {
   const { language = "cpp", code } = req.body;
-
-  return res.json({ language: language, code: code });
+  if (code === undefined) {
+    res.status(400).json({ success: false, message: "Code is required!" });
+  }
+  const filePath = await generateFile(language, code);
+  return res.status(200).json({ success: true, filePath });
 });
 
 app.listen(5000 || process.env.PORT, () =>
