@@ -16,15 +16,10 @@ const executeCpp = (filepath) => {
     exec(
       `g++ ${filepath} -o ${outPath} && cd ${outputPath} && "./${jobId}.exe"`,
       (error, stdout, stderr) => {
-        if (error) {
-            console.log(`error: ${error.message}`);
-          reject({ error, stderr });
-        }
-        if (stderr) {
-            console.log(`stderr: ${stderr}`);
-          reject(stderr);
-        }
+        error && reject({error, stderr});
+        stderr && reject(stderr);
         resolve(stdout);
+        
       }
     );
   });
