@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@0;1&display=swap');
+
+
+.bg-1{
+  background-color: #ddd;
+
+}
+.lable1{
+font-size: 20px;
+
+}
+.home-container {
+  width: 100%;
+  display: flex;
+  z-index: 100;
+  height: 100%;
+  overflow: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.home-container1 {
+  top: 0px;
+  flex: 0 0 auto;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #39424e;
+}
+.home-text {
+  color: rgb(50, 199, 102);
+  font-size: 40px;
+  align-self: center;
+  font-style: normal;
+  font-family: Source Code Pro;
+  font-weight: 700;
+  padding-left: 50px;
+}
+.home-text01 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  align-self: center;
+  font-style: normal;
+  font-family:'Merriweather Sans', sans-serif;
+  font-weight: 700;
+}
+.home-form {
+  margin-top: 10px;
+}
+.home-select {
+  padding-top: 10px;
+  border-color: var(--dl-color-gray-black);
+  border-width: 2px;
+  padding-left: 100px;
+  margin-top: 20px;
+  border-radius: var(--dl-radius-radius-radius8);
+  margin-bottom: 20px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+.home-textarea {
+  width: 100%;
+  height: 387px;
+  box-shadow: 1px 1px 20px 2px #1ba94c;
+  border-width: 0px;
+  border-radius: 15px;
+}
+.home-button {
+  left: 100px;
+  color: var(--dl-color-gray-white);
+  right: 0px;
+  width: var(--dl-size-size-large);
+  bottom: 0px;
+  height: auto;
+  position: absolute;
+  margin-top: 0px;
+  text-align: center;
+  font-family: Courier Prime;
+  margin-left: auto;
+  border-width: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  background-color: #1ba94c;
+}
+.font-1{
+  font-family: Courier Prime;
+}
+
+.Btn{
+  background-color: #1ba94c;
+  border: 0;color: white;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.home-text04 {
+  font-size: 20px;
+  font-family: Source Code Pro;
+  border-radius: 0px;
+}
+
+.home-text07 {
+  color: #0c0202;
+  font-size: 25px;
+  align-self: center;
+  font-style: normal;
+  margin-top: 50px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 20px;
+}
+.home-text08 {
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 300;
+}
+p{
+  font-size: 25px;
+}

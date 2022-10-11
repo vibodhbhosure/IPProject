@@ -1,0 +1,321 @@
+import React from 'react'
+
+import projectStyles from '.style.module.css'
+import styles from './home.module.css'
+
+const Home = (props) => {
+  return (
+    <div className={styles['container']}>
+      <div className={styles['container1']}>
+        <span className={styles['text']}>v</span>
+        <span className={styles['text01']}>
+          <span>Compiler</span>
+          <br></br>
+        </span>
+      </div>
+      <form className={styles['form']}>
+        <select className={styles['select']}>
+          <option value="Python" selected>
+            python
+          </option>
+          <option value="C++">c++</option>
+        </select>
+        <textarea
+          placeholder="placeholder"
+          className={` ${styles['textarea']} ${projectStyles['textarea']} `}
+        ></textarea>
+        <button className={` ${styles['button']} ${projectStyles['button']} `}>
+          <span className={styles['text04']}>
+            <span>Run</span>
+            <br></br>
+          </span>
+        </button>
+      </form>
+      <span className={styles['text07']}>Output :</span>
+      <span className={styles['text08']}>
+        <span>Created By : </span>
+        <br></br>
+        <span>Vibodh</span>
+        <br></br>
+        <span>
+          Satej
+          <span
+            dangerouslySetInnerHTML={{
+              __html: ' ',
+            }}
+          />
+        </span>
+        <br></br>
+        <span>Kamlesh</span>
+        <br></br>
+        <span>Chandan</span>
+        <br></br>
+      </span>
+    </div>
+  )
+}
+
+export default Home
+
+
+///////////////////////////
+
+.container {
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  .container1 {
+    top: 0px;
+    flex: 0 0 auto;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #39424e;
+  }
+  .text {
+    color: rgb(50, 199, 102);
+    font-size: 40px;
+    align-self: center;
+    font-style: normal;
+    font-family: Source Code Pro;
+    font-weight: 700;
+    padding-left: 50px;
+  }
+  .text01 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    align-self: center;
+    font-style: normal;
+    font-family: Source Code Pro;
+    font-weight: 700;
+  }
+  .form {
+    width: 843px;
+    height: 525px;
+    position: relative;
+    margin-top: 50px;
+  }
+  .select {
+    align-self: flex-start;
+    padding-top: 10px;
+    border-color: var(--dl-color-gray-black);
+    border-width: 2px;
+    padding-left: 100px;
+    border-radius: var(--dl-radius-radius-radius8);
+    margin-bottom: 30px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+  }
+  .textarea {
+    width: 100%;
+    height: 387px;
+    box-shadow: 1px 1px 20px 2px #1ba94c;
+    border-width: 0px;
+    border-radius: 15px;
+  }
+  .button {
+    left: 100px;
+    color: var(--dl-color-gray-white);
+    right: 0px;
+    width: var(--dl-size-size-large);
+    bottom: 0px;
+    height: auto;
+    position: absolute;
+    margin-top: 0px;
+    text-align: center;
+    font-family: Courier Prime;
+    margin-left: auto;
+    border-width: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #1ba94c;
+  }
+  .text04 {
+    font-size: 20px;
+    font-family: Source Code Pro;
+    border-radius: 0px;
+  }
+  .text07 {
+    color: #0c0202;
+    font-size: 25px;
+    align-self: center;
+    font-style: normal;
+    margin-top: 50px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+  }
+  .text08 {
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  
+///////////////
+
+<div>
+  <link href="./home.css" rel="stylesheet" />
+  <div class="home-container">
+    <div class="home-container1">
+      <span class="home-text">v</span>
+      <span class="home-text01">
+        <span>Compiler</span>
+        <br />
+      </span>
+    </div>
+    <form class="home-form">
+      <select class="home-select">
+        <option value="Python" selected>python</option>
+        <option value="C++">c++</option>
+      </select>
+      <textarea
+        placeholder="placeholder"
+        class="home-textarea textarea"
+      ></textarea>
+      <button class="home-button button">
+        <span class="home-text04">
+          <span>Run</span>
+          <br />
+        </span>
+      </button>
+    </form>
+    <span class="home-text07">Output :</span>
+    <span class="home-text08">
+      <span>Created By : </span>
+      <br />
+      <span>Vibodh</span>
+      <br />
+      <span>Satej</span>
+      <br />
+      <span>Kamlesh</span>
+      <br />
+      <span>Chandan</span>
+      <br />
+    </span>
+  </div>
+</div>
+
+///////////
+
+.home-container {
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  .home-container1 {
+    top: 0px;
+    flex: 0 0 auto;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #39424e;
+  }
+  .home-text {
+    color: rgb(50, 199, 102);
+    font-size: 40px;
+    align-self: center;
+    font-style: normal;
+    font-family: Source Code Pro;
+    font-weight: 700;
+    padding-left: 50px;
+  }
+  .home-text01 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    align-self: center;
+    font-style: normal;
+    font-family: Source Code Pro;
+    font-weight: 700;
+  }
+  .home-form {
+    width: 843px;
+    height: 525px;
+    position: relative;
+    margin-top: 50px;
+  }
+  .home-select {
+    align-self: flex-start;
+    padding-top: 10px;
+    border-color: var(--dl-color-gray-black);
+    border-width: 2px;
+    padding-left: 100px;
+    border-radius: var(--dl-radius-radius-radius8);
+    margin-bottom: 30px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+  }
+  .home-textarea {
+    width: 100%;
+    height: 387px;
+    box-shadow: 1px 1px 20px 2px #1ba94c;
+    border-width: 0px;
+    border-radius: 15px;
+  }
+  .home-button {
+    left: 100px;
+    color: var(--dl-color-gray-white);
+    right: 0px;
+    width: var(--dl-size-size-large);
+    bottom: 0px;
+    height: auto;
+    position: absolute;
+    margin-top: 0px;
+    text-align: center;
+    font-family: Courier Prime;
+    margin-left: auto;
+    border-width: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #1ba94c;
+  }
+  .home-text04 {
+    font-size: 20px;
+    font-family: Source Code Pro;
+    border-radius: 0px;
+  }
+  .home-text07 {
+    color: #0c0202;
+    font-size: 25px;
+    align-self: center;
+    font-style: normal;
+    margin-top: 50px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+  }
+  .home-text08 {
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 300;
+  }
+  
